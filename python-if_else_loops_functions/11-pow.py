@@ -11,6 +11,3 @@ def pow(a, b):
     else:
         temp = 0
     return temp
-
-
-print(pow(2, -3))
