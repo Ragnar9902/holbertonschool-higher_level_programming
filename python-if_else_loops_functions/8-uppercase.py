@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-def islower(c):
-    if (ord(c) >= ord('A') and ord(c) <= ord('Z')):
-        return True
-    else:
-        return False
+def uppercase(str):
+    str = str.upper()
+    print(f"{str}")
