@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-for n in range(0, 100):
-    if (n < 10):
-        print("0{}, ".format(n), end="")
-    elif (n != 99):
-        print("{}, ".format(n, hex(n)), end="")
+for i in range(0, 100):
+    if i == 99:
+        print(i)
     else:
-        print("99", end="")
+        print("{:0>2d}".format(i), end=", ")
