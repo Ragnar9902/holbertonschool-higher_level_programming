@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(Roman_string):
-    if type(Roman_string) != type("string") or Roman_string is None:
+    if not isinstance(Roman_string, str) or Roman_string is None:
         return 0
     r_numbers = {"L": 50, "V": 5, "X": 10, "C": 100, "D": 500, "I": 1}
     R_number = 0
