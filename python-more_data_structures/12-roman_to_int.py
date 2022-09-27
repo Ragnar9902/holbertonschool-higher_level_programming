@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-import string
-
-
 def roman_to_int(Roman_string):
     if type(Roman_string) != type("string") or Roman_string is None:
         return 0
