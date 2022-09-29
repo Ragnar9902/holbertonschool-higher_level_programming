@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
-    if len(my_list_1) != len(my_list_1):
-        print("out of rage")
     new_list = []
     for i in range(0, list_length):
         try:
@@ -12,7 +10,7 @@ def list_division(my_list_1, my_list_2, list_length):
         except TypeError:
             print("wrong type")
         except IndexError:
-            pass
+            print("out of range")
         finally:
             if div_s:
                 new_list.append(div)
