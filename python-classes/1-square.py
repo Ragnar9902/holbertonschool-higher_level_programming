@@ -12,3 +12,4 @@ class Square():
     def __init__(self, size) -> None:
         """Initialization of the class square"""
         self.__size = size
+        
