@@ -9,6 +9,7 @@ class Square():
     """This is a geometric figure
     of four sides
     """
+    __size = 0
     def __init__(self, size=0):
         """Initialization of the class square"""
         if not isinstance(size, int):
