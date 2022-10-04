@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Python clases
+    in this module we explore some acvance feature of python OOP
+"""
 class Rectangle:
     """
     >>> my_rectangle = Rectangle()
