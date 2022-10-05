@@ -29,7 +29,7 @@ class Rectangle:
         """
         create a string representation of the Reactangle for val() use
         """
-        return ("Reactangle({}, {})".format(self.__width, self.__height))
+        return ("Rectangle({}, {})".format(self.__width, self.__height))
 
     @property
     def width(self):
