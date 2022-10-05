@@ -13,6 +13,18 @@ class Rectangle:
         self.width = width
         self.height = height
 
+    def __str__(self):
+        """this function return a nice reprecentation of a rectangle
+        """
+        if self.height == 0 or self.width == 0:
+            return 0
+        Rect = ''
+        for i in range(0, self.height):
+            for j in range(0, self.width):
+                Rect += '#'
+            Rect += '\n'
+        return Rect
+
     @property
     def width(self):
         """Retrieves the width of a Rectangle instance."""
