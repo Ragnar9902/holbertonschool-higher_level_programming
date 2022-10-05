@@ -1,24 +1,12 @@
 #!/usr/bin/python3
-Rectangle = __import__('6-rectangle').Rectangle
-
-my_rectangle = Rectangle(2, 4)
-print(str(my_rectangle))
-print("--")
-print(my_rectangle)
-print("--")
-print(repr(my_rectangle))
-print("--")
-print(hex(id(my_rectangle)))
-print("--")
+Rectangle = __import__('7-rectangle').Rectangle
 
 # create new instance based on representation
-new_rectangle = repr(my_rectangle)
-print(new_rectangle)
-print("--")
-print(new_rectangle)
-print("--")
 
-print(type(new_rectangle) is type(my_rectangle))
-print(Rectangle.number_of_instances)
-del my_rectangle
-print(Rectangle.number_of_instances)
+my_rectangle_1 = Rectangle(8, 4)
+print(my_rectangle_1)
+my_rectangle_1.print_symbol = "H"
+print(my_rectangle_1)
+
+my_rectangle_2 = Rectangle(2, 1)
+print(my_rectangle_2)

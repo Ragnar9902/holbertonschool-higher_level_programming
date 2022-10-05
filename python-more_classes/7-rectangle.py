@@ -25,7 +25,7 @@ class Rectangle:
         Rect = ''
         for i in range(0, self.height):
             for j in range(0, self.width):
-                Rect += Rectangle.print_symbol
+                Rect += str(self.print_symbol)
             Rect += '\n'
         return Rect[:-1]
 
