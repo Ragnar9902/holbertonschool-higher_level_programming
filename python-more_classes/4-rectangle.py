@@ -25,8 +25,12 @@ class Rectangle:
             Rect += '\n'
         return Rect[:-1]
 
-    def __repr__():
-        pass
+    def __repr__(self):
+        """
+        create a string representation of the Reactangle for val() use
+        """
+        return ("Reactangle({}, {})".format(self.__width, self.__height))
+
     @property
     def width(self):
         """Retrieves the width of a Rectangle instance."""

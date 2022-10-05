@@ -1,13 +1,21 @@
 #!/usr/bin/python3
-Rectangle = __import__('2-rectangle').Rectangle
+Rectangle = __import__('4-rectangle').Rectangle
 
-try:
-    my_rectangle = Rectangle(2, -3)
-    print(my_rectangle)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+my_rectangle = Rectangle(2, 4)
+print(str(my_rectangle))
+print("--")
+print(my_rectangle)
+print("--")
+print(repr(my_rectangle))
+print("--")
+print(hex(id(my_rectangle)))
+print("--")
 
-try:
-    my_rectangle = Rectangle(-2, 3)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+# create new instance based on representation
+new_rectangle = repr(my_rectangle)
+print(new_rectangle)
+print("--")
+print(new_rectangle)
+print("--")
+
+print(type(new_rectangle) is type(my_rectangle))
