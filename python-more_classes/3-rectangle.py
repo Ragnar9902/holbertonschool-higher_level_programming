@@ -17,13 +17,13 @@ class Rectangle:
         """this function return a nice reprecentation of a rectangle
         """
         if self.height == 0 or self.width == 0:
-            return 0
+            return ''
         Rect = ''
         for i in range(0, self.height):
             for j in range(0, self.width):
                 Rect += '#'
             Rect += '\n'
-        return Rect
+        return Rect[:-1]
 
     @property
     def width(self):
