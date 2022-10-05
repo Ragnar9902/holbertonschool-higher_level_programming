@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-Rectangle = __import__('5-rectangle').Rectangle
+Rectangle = __import__('6-rectangle').Rectangle
 
 my_rectangle = Rectangle(2, 4)
 print(str(my_rectangle))
@@ -19,5 +19,6 @@ print(new_rectangle)
 print("--")
 
 print(type(new_rectangle) is type(my_rectangle))
-
+print(Rectangle.number_of_instances)
 del my_rectangle
+print(Rectangle.number_of_instances)
