@@ -4,7 +4,7 @@
 
 
 def print_square(size):
-    """print a square of side equal to size 
+    """print a square of side equal to size
     """
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
