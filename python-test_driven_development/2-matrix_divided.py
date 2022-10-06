@@ -8,10 +8,13 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
     if type(div) is not int and type(div) is not float:
         raise TypeError("div must be a number")
-    for row in matrix:
+    rowL = len(matrix[0])
+    for iter, row in matrix:
+        if iter > 0 and len(row) != rowL:
+            raise TypeError("Each row of the matrix must have the same size")
         for i in row:
             if type(i) is not float and type(i) is not int:
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-
+    
     matrix = [[round(x / div, 2) for x in row] for row in matrix]
     return matrix
