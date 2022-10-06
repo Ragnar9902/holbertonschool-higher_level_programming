@@ -17,3 +17,5 @@ def add_integer(a, b):
 
     if result == float('inf') or result == -float('inf'):
         return 89
+
+    return result
