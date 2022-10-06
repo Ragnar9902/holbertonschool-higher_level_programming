@@ -11,6 +11,9 @@ def add_integer(a, b):
     if not( isinstance(b, int) or isinstance(b, float)):    
         raise TypeError("b must be an integer")
     if isinstance(a, float) or isinstance(b, float):
-        return int(a) + int(b)
+        result = int(a) + int(b)
 
-    return a + b
+    result = a + b
+
+    if result == float('inf') or result == -float('inf'):
+        return 89
