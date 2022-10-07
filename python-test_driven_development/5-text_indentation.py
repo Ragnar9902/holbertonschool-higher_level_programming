@@ -4,6 +4,9 @@
 
 
 def text_indentation(text):
+    """
+    add format to a string to print
+    """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     for delim in ".:?":
@@ -11,4 +14,3 @@ def text_indentation(text):
             [line.strip(" ") for line in text.split(delim)])
 
     print("{}".format(text), end="")
-
