@@ -4,8 +4,8 @@
 
 
 class My_list(list):
-    """extend the list class
-    """
+    """extend the list class."""
+    
     def print_sorted(self):
         new_list = self[:]
         new_list.sort()
