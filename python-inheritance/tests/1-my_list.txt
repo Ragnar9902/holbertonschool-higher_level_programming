@@ -1,0 +1,7 @@
+python tests
+    >>> Mylist = __import__('1-my_list').My_list
+    >>> my_list = Mylist()
+    >>> my_list.append(1)
+    >>> my_list.append(2)
+    >>> my_list
+    [1, 2]
