@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """Python inheritance
+proyect
 """
 
 
 class My_list(list):
-    """extend the list class."""
+    """Extend the list class."""
 
     def print_sorted(self):
         """Prints the list, in ascending sort."""
