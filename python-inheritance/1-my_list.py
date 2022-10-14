@@ -5,7 +5,7 @@ Creates a class inheriting from the list class.
 
 
 class MyList(list):
-    """Class yyList inherits from list."""
+    """yyList inherits from list."""
 
     def print_sorted(self):
         """Prints the list, in ascending sort."""
