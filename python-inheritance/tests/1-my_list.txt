@@ -6,7 +6,7 @@ Using ``MyList``
 ---------------------
 
 Import the class:
-    >>> Mylist = __import__('1-my_list').My_list
+    >>> Mylist = __import__('1-my_list').Mylist
     >>> my_list = MyList()
 
     >>> my_list
