@@ -4,8 +4,6 @@
 
 
 def is_same_class(obj, a_class):
-    """determinated whether an object is istance of a class or
-    a class that inherite from that class
-    """
+    """determinated whether an object is istance of a class."""
 
     return isinstance(obj, a_class)
