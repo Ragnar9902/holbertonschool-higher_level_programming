@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-lookup = __import__('0-lookup').lookup
+Rectangle = __import__('9-rectangle').Rectangle
 
 class MyClass1(object):
     pass
@@ -10,6 +10,6 @@ class MyClass2(object):
     def my_meth(self):
         pass
 
-print(lookup(MyClass1))
-print(lookup(MyClass2))
-print(lookup(int))
+rectangle1 = Rectangle(3, 8)
+print(rectangle1)
+print(rectangle1.area())
