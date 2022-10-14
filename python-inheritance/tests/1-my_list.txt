@@ -1,4 +1,11 @@
-python tests
+=============================
+The ``1-my_list`` module
+=============================
+
+Using ``MyList``
+---------------------
+
+Import the class:
     >>> Mylist = __import__('1-my_list').My_list
     >>> my_list = MyList()
 
