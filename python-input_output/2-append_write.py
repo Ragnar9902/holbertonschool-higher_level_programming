@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-"""Module 2-apped_write.
-Writes in the end text file.
+"""Module 4-append_write.
+Appends a string at the end of a text file.
 """
 
 
-def write_file(filename="", text=""):
-    """add text in the end of the file filename.
+def append_write(filename="", text=""):
+    """Appends text to filename.
+    Args:
+        - filename: name of the file
+        - text: text to append
+    Returns: the number of characters added
     """
 
-    with open(filename, 'a') as f:
-        return f.write(text)
+    with open(filename, 'a+') as fp:
+        return fp.write(text)
