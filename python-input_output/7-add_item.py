@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Module 9-add_item.
-Adds all arguments to a Python list,
-and then save them to a file.
+"""Module 8-load_from_json_file.
+Creates an Object from a “JSON file”.
 """
+
 
 import sys
 import json
