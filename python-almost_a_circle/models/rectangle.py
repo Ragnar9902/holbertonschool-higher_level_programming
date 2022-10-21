@@ -34,6 +34,11 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """_summary_
+
+        Returns:
+            _int_: _description_
+        """
         return self.__width
 
     @property
