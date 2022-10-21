@@ -5,6 +5,9 @@ python oriented programming
 
 
 class Base:
+    """base class of the proyect
+    """
+    
     __nb_objects = 0
     
     def __init__(self, id=None):
