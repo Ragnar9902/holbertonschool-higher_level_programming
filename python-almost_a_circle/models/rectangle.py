@@ -17,6 +17,15 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """initializate function
+
+        Args:
+            width (int): descript one dimention of the rentangle__
+            height (int): _descript one dimention of the rentangle_
+            x (int, optional): _description_. Defaults to 0.
+            y (int, optional): _description_. Defaults to 0.
+            id (_type_, optional): _description_. Defaults to None.
+        """
         super.__init__()
         self.__width = width
         self.__height = height
