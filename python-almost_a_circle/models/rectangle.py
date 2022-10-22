@@ -100,7 +100,7 @@ class Rectangle(Base):
         """area of rectangle
         """
         return self.height * self.width
-    
+
     def display(self):
         """display the rectangle
         """
