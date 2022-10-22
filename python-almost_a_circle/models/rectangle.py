@@ -1,70 +1,97 @@
 #!/usr/bin/python3
-"""Module almos a circle
+"""Module rectangle.
+Create a Rectangle class, inheriting from Base.
 """
 
 from models.base import Base
 
 
 class Rectangle(Base):
-    """class that represent a rectangle
-
-    Args:
-        Base (_type_): _description_
-        Private instance attribute: width
-        Private instance attribute: height
-        Private instance attribute: x
-        Private instance attribute: y
+    """Class describing a rectangle.
+    Public instance methods:
+        - area()
+        - display()
+        - to_dictionary()
+        - update()
+    Inherits from Base.
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """initializate function
-
+        """Initializes a Rectangle instance.
         Args:
-            width (int): descript one dimention of the rentangle__
-            height (int): _descript one dimention of the rentangle_
-            x (int, optional): _description_. Defaults to 0.
-            y (int, optional): _description_. Defaults to 0.
-            id (_type_, optional): _description_. Defaults to None.
+            - __width: width
+            - __height: height
+            - __x: position
+            - __y: position
+            - id: id
         """
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
     def width(self):
-        """_summary_
+        """Retrieves the width attribute."""
 
-        Returns:
-            _int_: _description_
-        """
-        return self.width
+        return self.__width
 
     @property
     def height(self):
+        """Retrieves the height attribute."""
+
         return self.__height
 
     @property
     def x(self):
+        """Retrieves the x attribute."""
+
         return self.__x
 
     @property
     def y(self):
+        """Retrieves the y attribute."""
+
         return self.__y
 
     @width.setter
     def width(self, value):
-        self___width = value
+        """Sets the width attribute."""
+
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
+        self.__width = value
 
     @height.setter
     def height(self, value):
-        self___width = value
+        """Sets the height attribute."""
 
-    @width.setter
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        if value <= 0:
+            raise ValueError("height must be > 0")
+        self.__height = value
+
+    @x.setter
     def x(self, value):
-        self___x = value
+        """Sets the x attribute."""
 
-    @height.setter
+        if type(value) is not int:
+            raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
+        self.__x = value
+
+    @y.setter
     def y(self, value):
+        """Sets the y attribute."""
+
+        if type(value) is not int:
+            raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be >= 0")
         self.__y = value
