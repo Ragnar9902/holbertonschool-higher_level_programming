@@ -104,8 +104,11 @@ class Rectangle(Base):
     def display(self):
         """display the rectangle
         """
-        for i in range(self.height):
-            print("#" * self.width)
+        for i in range(self.height + self.y):
+            if i < self.y:
+                print("")
+            if i >= self.y:
+                print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """Returns a string representation of a Rectangle instance."""
