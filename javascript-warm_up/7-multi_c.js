@@ -1,12 +1,11 @@
 #!/usr/bin/node
-let process = require('process')
-if (parseInt(process.argv[2])){    
-    let line = 'C is fun';
-    let n_times = parseInt(process.argv[2])
-    for (let i = 1; i <= n_times; i++){
-        console.log(line);
-    }
-}
-else{
-    console.log('Missing number of occurrences')
+const process = require('process');
+if (parseInt(process.argv[2])) {
+  const line = 'C is fun';
+  const ntimes = parseInt(process.argv[2]);
+  for (let i = 1; i <= ntimes; i++) {
+    console.log(line);
+  }
+} else {
+  console.log('Missing number of occurrences');
 }
