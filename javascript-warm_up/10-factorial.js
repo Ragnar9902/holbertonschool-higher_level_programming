@@ -16,5 +16,5 @@ if (parseInt(process.argv[2])){
     console.log(factorial(num));
 }
 else{
-    console.log(parseInt(process.argv[2]))
+    console.log(1)
 }
