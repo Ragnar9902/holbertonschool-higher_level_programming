@@ -1,9 +1,9 @@
 #!/usr/bin/node
 const process = require('process');
 if (parseInt(process.argv[2])) {
-  const n_times = parseInt(process.argv[2]);
-  const line = 'X'.repeat(n_times);
-  for (let i = 1; i <= n_times; i++) {
+  const ntimes = parseInt(process.argv[2]);
+  const line = 'X'.repeat(ntimes);
+  for (let i = 1; i <= ntimes; i++) {
     console.log(line);
   }
 } else {

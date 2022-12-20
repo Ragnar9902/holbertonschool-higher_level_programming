@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const process = require('process');
 const argv = process.argv.slice(2, process.argv.length);
-function second_biger (list) {
+function seconbiger (list) {
   if (list.length <= 1) {
     return 0;
   }
@@ -9,11 +9,11 @@ function second_biger (list) {
   return list.sort(function (a, b) { return a - b; }).reverse()[1];
 }
 if (parseInt(process.argv[2])) {
-  const list_num = [];
+  const lisNum = [];
   for (let i = 0; i < argv.length; i++) {
-    list_num.push(parseInt(argv[i]));
+    lisNum.push(parseInt(argv[i]));
   }
-  console.log(second_biger(list_num));
+  console.log(seconbiger(lisNum));
 } else {
   console.log(0);
 }
