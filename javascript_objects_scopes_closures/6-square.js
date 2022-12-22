@@ -10,5 +10,8 @@ module.exports = class Square extends Square1 {
         console.log(line);
       }
     }
+    else {
+      this.charPrint('X');
+    }
   }
 };
