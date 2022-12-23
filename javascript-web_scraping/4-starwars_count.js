@@ -13,7 +13,7 @@ request(url, (err, response, body) => {
   let nOcc = 0;
   for (const film of results) {
     for (const chara of film.characters) {
-      if (chara === 'https://swapi-api.hbtn.io/api/people/18/') {
+      if (chara.includes('18')) {
         nOcc += 1;
       }
     }

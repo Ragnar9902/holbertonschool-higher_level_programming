@@ -8,10 +8,9 @@ const url = argv[2];
 request(url, (err, response, body) => {
   if (err) {
     console.error(err);
-    console.log(response);
   }
-  const content = body.toString();
-  fs.writeFile(argv[3], content, function (err) {
+  const content = JSON.parse(body.toString());
+  fs.writeFile(argv[3], content, 'utf-8',function (err) {
     console.error(err);
-  })
+  });
 });
