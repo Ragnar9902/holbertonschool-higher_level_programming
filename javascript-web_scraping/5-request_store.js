@@ -4,13 +4,15 @@ const process = require('process');
 const fs = require('fs');
 const argv = process.argv;
 const url = argv[2];
+const filename = argv[3];
 
-request(url, (err, response, body) => {
-  if (err) {
-    console.error(err);
+request(url, (error, response, body) => {
+  if (!error || response.statusCode === 200) {
+    const data = JSON.stringify(body);
+    fs.writeFile(filename, JSON.parse(data), 'utf-8', err => {
+      if (err) {
+        console.error(err);
+      }
+    });
   }
-  const content = JSON.parse(body.toString());
-  fs.writeFile(argv[3], content, 'utf-8',function (err) {
-    console.error(err);
-  });
 });
